@@ -3,10 +3,13 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'https://github.com/vim-ruby/vim-ruby.git'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-ruby/vim-ruby.git'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-commentary'
@@ -15,11 +18,11 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-set number
 set relativenumber
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set number
+set smartindent
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set smarttab
 set mouse=a
