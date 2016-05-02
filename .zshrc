@@ -53,7 +53,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -95,3 +95,5 @@ bindkey '^[[2~' beep
 bindkey '^[[3~' delete-char
 bindkey '^[[5~' vi-backward-blank-word
 bindkey '^[[6~' vi-forward-blank-word
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
